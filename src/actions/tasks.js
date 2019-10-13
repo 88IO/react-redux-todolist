@@ -18,3 +18,7 @@ export const deleteTask = (id) => ({
     id
   }
 });
+
+export const clearTask = () => ({
+  type: 'CLEAR_TASK',
+});

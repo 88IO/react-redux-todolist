@@ -14,14 +14,20 @@ export default function tasksReducer(state=initialState, action) {
     case 'ADD_TASK':
       return {
         ...state,
+        task: '',
         tasks: state.tasks.concat([{task: action.payload.task, id: state.uniqueId}]),
         uniqueId: state.uniqueId + 1
       };
     case 'DELETE_TASK':
       return {
         ...state,
-        tasks: state.tasks.filter((v) => v.id != action.payload.id)
-      }
+        tasks: state.tasks.filter((v) => v.id !== action.payload.id)
+      };
+    case 'CLEAR_TASK':
+      return {
+        ...state,
+        tasks: []
+      };
     default:
       return state;
   }

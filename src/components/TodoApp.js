@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TodoApp({ task, tasks, inputTask, addTask, deleteTask, redirectToError }) {
+export default function TodoApp({ task, tasks, inputTask, addTask, deleteTask, clearTask, redirectToError }) {
   return (
     <div>
       <input type='text' value={task} onChange={(e) => inputTask(e.target.value)} />
@@ -18,6 +18,7 @@ export default function TodoApp({ task, tasks, inputTask, addTask, deleteTask, r
           })
         }
       </ul>
+      <button onClick={() => clearTask()} >Clear Task</button>
       <button onClick={() => redirectToError()} >Error Page</button>
     </div>
   );
