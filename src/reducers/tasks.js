@@ -1,4 +1,5 @@
 const initialState = {
+  uniqueId: 1,
   task: '',
   tasks: []
 };
@@ -13,8 +14,14 @@ export default function tasksReducer(state=initialState, action) {
     case 'ADD_TASK':
       return {
         ...state,
-        tasks: state.tasks.concat([action.payload.task])
+        tasks: state.tasks.concat([{task: action.payload.task, id: state.uniqueId}]),
+        uniqueId: state.uniqueId + 1
       };
+    case 'DELETE_TASK':
+      return {
+        ...state,
+        tasks: state.tasks.filter((v) => v.id != action.payload.id)
+      }
     default:
       return state;
   }
