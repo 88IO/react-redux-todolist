@@ -1,15 +1,19 @@
 import React from 'react';
 
-export default function TodoApp({ task, tasks, inputTask, addTask, redirectToError }) {
+export default function TodoApp({ task, tasks, inputTask, addTask, deleteTask, redirectToError }) {
   return (
     <div>
-      <input type='text' onChange={(e) => inputTask(e.target.value)} />
+      <input type='text' value={task} onChange={(e) => inputTask(e.target.value)} />
       <input type='button' value='add' onClick={() => addTask(task)} />
       <ul>
         {
-          tasks.map((item, i) => {
+          tasks.map((item) => {
             return (
-              <li key={i}>{item}</li>
+              <li key={item.id}>
+                {item.task}
+                &nbsp;
+                <a href="#" onClick={() => deleteTask(item.id)}>✗{item.id}</a>
+              </li>
             );
           })
         }
