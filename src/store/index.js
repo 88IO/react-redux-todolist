@@ -4,14 +4,14 @@ import {
   applyMiddleware
 } from 'redux';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
-import storage from 'redux-persist/lib/storage';
 import { persistReducer } from 'redux-persist';
+import storageSession from 'redux-persist/lib/storage/session';
 import tasksReducer from '../reducers/tasks';
 
 export default function createStore(history) {
   return reduxCreateStore(
     combineReducers({
-      tasks: persistReducer({key: 'task', storage, whitelist: ['uniqueId', 'tasks']}, tasksReducer),
+      tasks: persistReducer({key: 'task', storage: storageSession, whitelist: ['uniqueId', 'tasks']}, tasksReducer),
       router: routerReducer
     }),
     applyMiddleware(
