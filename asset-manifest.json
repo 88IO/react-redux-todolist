@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-redux-todolist/static/js/main.934d97ca.chunk.js",
-    "main.js.map": "/react-redux-todolist/static/js/main.934d97ca.chunk.js.map",
+    "main.js": "/react-redux-todolist/static/js/main.7a1bc6c0.chunk.js",
+    "main.js.map": "/react-redux-todolist/static/js/main.7a1bc6c0.chunk.js.map",
     "runtime-main.js": "/react-redux-todolist/static/js/runtime-main.0fe3be7f.js",
     "runtime-main.js.map": "/react-redux-todolist/static/js/runtime-main.0fe3be7f.js.map",
-    "static/js/2.a1783bd2.chunk.js": "/react-redux-todolist/static/js/2.a1783bd2.chunk.js",
-    "static/js/2.a1783bd2.chunk.js.map": "/react-redux-todolist/static/js/2.a1783bd2.chunk.js.map",
+    "static/js/2.bdb9d72b.chunk.js": "/react-redux-todolist/static/js/2.bdb9d72b.chunk.js",
+    "static/js/2.bdb9d72b.chunk.js.map": "/react-redux-todolist/static/js/2.bdb9d72b.chunk.js.map",
     "index.html": "/react-redux-todolist/index.html",
-    "precache-manifest.3da38afb947dd9596f3ec85778005961.js": "/react-redux-todolist/precache-manifest.3da38afb947dd9596f3ec85778005961.js",
+    "precache-manifest.d89939d0d5f02abaf1829d30f804c361.js": "/react-redux-todolist/precache-manifest.d89939d0d5f02abaf1829d30f804c361.js",
     "service-worker.js": "/react-redux-todolist/service-worker.js",
-    "static/js/2.a1783bd2.chunk.js.LICENSE": "/react-redux-todolist/static/js/2.a1783bd2.chunk.js.LICENSE"
+    "static/js/2.bdb9d72b.chunk.js.LICENSE": "/react-redux-todolist/static/js/2.bdb9d72b.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.0fe3be7f.js",
-    "static/js/2.a1783bd2.chunk.js",
-    "static/js/main.934d97ca.chunk.js"
+    "static/js/2.bdb9d72b.chunk.js",
+    "static/js/main.7a1bc6c0.chunk.js"
   ]
 }
